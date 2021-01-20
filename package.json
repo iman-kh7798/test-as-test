@@ -59,7 +59,5 @@
   "devDependencies": {
     "@babel/register": "^7.12.1"
   },
-  "sadsad": {
-    
-  }
+
 }
