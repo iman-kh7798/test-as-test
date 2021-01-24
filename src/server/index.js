@@ -1,11 +1,16 @@
 import 'babel-polyfill';
 import express from 'express';
 import {matchRoutes} from "react-router-config";
-import Routes from "./Routes";
+import Routes from "../components/Routes";
 import React from 'react';
-import Renderer from "./Renderer/Renderer";
-import createServerStore from "./Renderer/createServerStore";
+import Renderer from "./Renderer";
+import createServerStore from "./createStore";
 import proxy from 'express-http-proxy';
+
+
+
+
+
 const app=express();
 app.use('/api',proxy('http://react-ssr-api.herokuapp.com/',{
     proxyReqOptDecorator(opts){

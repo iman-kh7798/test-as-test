@@ -1,18 +1,15 @@
-import React from 'react';
-import {renderRoutes} from "react-router-config";
-import Header from "./Components/Header/Header";
-import {fetchtUsers} from "../actions/actions";
-import '../styles.css'
-const App=({route})=> {
+import React, {Component} from 'react';
+
+class App extends Component {
+    render() {
         return (
             <div>
-                <Header/>
-                {renderRoutes(route.routes)}
+                <p>hello</p>
             </div>
-        )
+        );
     }
+}
 
 export default {
-    component:App,
-    LoadData: ({dispatch})=>dispatch(fetchtUsers())
+    component:App
 }
