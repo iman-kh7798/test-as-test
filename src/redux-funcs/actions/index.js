@@ -3,7 +3,7 @@ import React from "react";
 // import AuthenticationTokenPrefix from "../../constantValues";
 
 export const FETCH_CURRENT_USER = 'fetch_current_user';
-export const fetchCurrentUser = () => async (dispatch, getState, api) => {
+export const fetchCurrentUser = () =>(dispatch, getState, api) => {
     // const res = await api.get(urls.URL_UserData);
     dispatch(
         {
