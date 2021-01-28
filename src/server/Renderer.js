@@ -8,6 +8,7 @@ import {renderRoutes} from 'react-router-config'
 import {Helmet} from 'react-helmet'
 export default (req,store,context) =>
 {
+
     const content=renderToString(
         <Provider store={store}>
             <StaticRouter location={req.path} context={context}>
